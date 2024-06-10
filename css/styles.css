@@ -1,7 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -37,6 +35,8 @@ header {
     background-color: #ffff;
     border-radius: 15px;
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 .btn:hover {
@@ -81,24 +81,29 @@ nav {
 
 main {
     flex-grow: 1;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
 }
 
 main h1 {
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 40px;
+    margin-bottom: 70px;
 }
 
-main h2 {
-    font-size: 20px;
-    margin-top: 50px; 
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
 }
 
-main h3{
-    font-size: 25px;
-    margin-bottom: 50px;
+/* Stijlen voor de boxen */
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #6bbcf7;
+    border-radius: 15px;
+    margin-bottom: 100px;
 }
