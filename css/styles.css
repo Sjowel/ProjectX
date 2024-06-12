@@ -273,3 +273,23 @@ main h2 {
     list-style: none;
     padding: 0;
 }
+
+.work-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1.5px solid #A0D8FF;
+    background-color: #ffff;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    display: block;
+    width: 25%;
+}
+
+
+.work-btn:hover {
+    background-color: #6bbcf7;
+    border-color: #6bbcf7;

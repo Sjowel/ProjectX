@@ -9,10 +9,13 @@ function loadWorks() {
     const works = JSON.parse(localStorage.getItem('works')) || [];
     works.forEach((work, index) => {
         const listItem = document.createElement('li');
-        listItem.textContent = work.title;
-        listItem.onclick = function() {
+        const button = document.createElement('button');
+        button.textContent = work.title;
+        button.className = 'work-btn';
+        button.onclick = function() {
             redirectToEditPage(index);
         };
+        listItem.appendChild(button);
         workList.appendChild(listItem);
     });
 }
@@ -82,3 +85,4 @@ if (window.location.pathname.endsWith('create.html')) {
         }
     };
 }
+
