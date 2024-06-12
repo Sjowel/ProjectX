@@ -6,7 +6,6 @@
     <title>MyWritings</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
-    <script src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -22,19 +21,26 @@
             <ul class="nav-links">
                 <li><a href="index.html">Browse</a></li>
                 <li><a href="mywork.html">My Work</a></li>
-                </ul>
-                <div class="nav-links search-container">
-                    <input type="text" placeholder="Search...">
-                </div>
-                
+            </ul>
+            <div class="nav-links search-container">
+                <input type="text" placeholder="Search...">
+            </div>
         </nav>
         <div class="separator"></div>
     </header>
 
     <main>
-        <div class="work-container">
-            <h2>Stories</h2>
-            <ul id="work-list"></ul>
+        <div class="content-container">
+            <div class="work-container">
+                <h2>Stories</h2>
+                <ul id="work-list"></ul>
+            </div>
+            <div class="box-container1">
+                <div class="box1">
+                    <h2>Create your story</h2>
+                    <button class="create-btn" onclick="redirectToCreatePage()">Create</button>
+                </div>
+            </div>
         </div>
         <div id="delete-confirmation" class="modal">
             <div class="modal-content">
@@ -43,14 +49,6 @@
                 <button class="cancel-btn" onclick="cancelDelete()">No</button>
             </div>
         </div>
-        <div class="box-container1">
-            <div class="box1">
-                <h2>Create your story</h2>
-                <button class="create-btn" onclick="redirectToCreatePage()">Create</button>
-            </div> 
-            </div>
-        </div>
     </main>
-
 </body>
 </html>

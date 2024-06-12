@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -89,13 +91,15 @@ main {
     justify-content: left;
     align-items: left;
     text-align: left;
+    padding: 20px; 
 }
 
 main h1 {
     font-size: 40px;
     margin-top: 40px;
     margin-bottom: 70px;
-    margin-left: 20px;
+    text-align: left; 
+    margin-left: 10px; 
 }
 
 .box-container {
@@ -149,25 +153,38 @@ main h1 {
     border-color: #6bbcf7;
 }
 
-.box1 {
-    width: 450px;
-    height: 200px;
-    border: 2px solid #A0D8FF;
-    border-radius: 20px;
-    margin-top: 100px;
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.work-container {
+    width: 30%;
 }
 
 .box-container1 {
+    width: 60%;
     display: flex;
     justify-content: center;
-    gap: 70px;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 100px;
 }
 
-main h2 {
-    font-size: 30px;
-    margin-top: 40px;
-    margin-left: 100px;
-    margin-bottom: 50px;
+.box1 {
+    width: 100%;
+    max-width: 450px;
+    height: 200px;
+    border: 2px solid #A0D8FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .create-btn {
@@ -180,7 +197,6 @@ main h2 {
     text-align: center;
     text-decoration: none;
     color: black;
-    margin-left: 150px;
 }
 
 .create-btn:hover {
@@ -188,7 +204,6 @@ main h2 {
     border-color: #A0D8FF;
 }
 
-/* Create Page Styles */
 .story-container {
     width: 100%;
     max-width: 600px;
@@ -257,10 +272,6 @@ main h2 {
     margin-bottom: 20px;
 }
 
-.work-container {
-    margin-top: 50px;
-}
-
 .work-container h2 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -272,17 +283,17 @@ main h2 {
 }
 
 .work-btn {
-    padding: 7px 150px; 
-    font-size: 15px; 
+    padding: 10px 70px;
+    font-size: 15px;
     cursor: pointer;
-    border: 1px solid #A0D8FF; 
+    border: 1px solid #A0D8FF;
     background-color: #ffff;
-    border-radius: 10px; 
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
     color: black;
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .work-btn:hover {
@@ -315,24 +326,24 @@ li {
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; 
-    background-color: rgb(0, 0, 0); 
-    background-color: rgba(0, 0, 0, 0.4); 
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
+    width: 80%;
     max-width: 400px;
     text-align: center;
     border-radius: 20px;
