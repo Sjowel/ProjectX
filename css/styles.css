@@ -104,7 +104,7 @@ main h1 {
     gap: 70px;
 }
 
-/* Stijlen voor de boxen */
+/* Styles for the boxes */
 .box {
     width: 200px;
     height: 200px;
@@ -165,9 +165,9 @@ main h1 {
 
 main h2 {
     font-size: 30px;
-        margin-top: 40px;
-        margin-left: 100px;
-        margin-bottom: 50px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
 
 .create-btn {
@@ -188,7 +188,7 @@ main h2 {
     border-color: #A0D8FF;
 }
 
-
+/* Create Page Styles */
 .story-container {
     width: 100%;
     max-width: 600px;
@@ -224,19 +224,17 @@ main h2 {
 }
 
 #title-input {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+    width: 70%;
+    max-width: 500px;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #A0D8FF;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .save-title-btn {
-    padding: 10px 50px;
-    font-size: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
     border: 2px solid #A0D8FF;
     background-color: #A0D8FF;
@@ -245,7 +243,6 @@ main h2 {
     text-decoration: none;
     color: black;
     margin-left: 10px;
-    margin-right: -20px;
 }
 
 .save-title-btn:hover {
@@ -275,21 +272,122 @@ main h2 {
 }
 
 .work-btn {
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 7px 150px; 
+    font-size: 15px; 
     cursor: pointer;
-    border: 1.5px solid #A0D8FF;
+    border: 1px solid #A0D8FF; 
     background-color: #ffff;
-    border-radius: 15px;
+    border-radius: 10px; 
     text-align: center;
     text-decoration: none;
     color: black;
-    margin-bottom: 10px;
-    display: block;
-    width: 25%;
+    display: inline-block;
+    margin-right: 10px; 
 }
-
 
 .work-btn:hover {
     background-color: #6bbcf7;
     border-color: #6bbcf7;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #FF4D4D;
+    background-color: #FF4D4D;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.delete-btn:hover {
+    background-color: #FF6666;
+    border-color: #FF6666;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.confirm-btn,
+.cancel-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.confirm-btn {
+    background-color: #FF4D4D;
+    border: 1px solid #FF4D4D;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #FF6666;
+    border-color: #FF6666;
+}
+
+.cancel-btn {
+    background-color: #A0D8FF;
+    border: 1px solid #A0D8FF;
+}
+
+.cancel-btn:hover {
+    background-color: #cbe6f8;
+    border-color: #A0D8FF;
+}
+
+#description-input {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #A0D8FF;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#tags-input {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #A0D8FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

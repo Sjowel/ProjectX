@@ -32,16 +32,23 @@
     </header>
 
     <main>
+        <div class="work-container">
+            <h2>Stories</h2>
+            <ul id="work-list"></ul>
+        </div>
+        <div id="delete-confirmation" class="modal">
+            <div class="modal-content">
+                <p>Are you sure you want to delete your work?</p>
+                <button class="confirm-btn" onclick="confirmDelete()">Yes</button>
+                <button class="cancel-btn" onclick="cancelDelete()">No</button>
+            </div>
+        </div>
         <div class="box-container1">
             <div class="box1">
                 <h2>Create your story</h2>
                 <button class="create-btn" onclick="redirectToCreatePage()">Create</button>
             </div> 
             </div>
-        </div>
-        <div class="work-container">
-            <h2>Stories</h2>
-            <ul id="work-list"></ul>
         </div>
     </main>
 

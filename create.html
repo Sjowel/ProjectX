@@ -36,7 +36,18 @@
             <button class="save-title-btn" onclick="saveTitle()">Save Title</button>
         </div>
         <textarea class="story-input" id="story-content" placeholder="Start writing your story here..."></textarea>
-        <button class="submit-btn" onclick="submitStory()">Submit</button>
+        <button class="submit-btn" onclick="showDescriptionPopup()">Submit</button>
+    </div>
+
+    <div id="description-popup" class="modal">
+        <div class="modal-content">
+            <p>Enter a short description of your story:</p>
+            <textarea id="description-input" placeholder="Enter story description..."></textarea>
+            <p>Add tags (comma separated):</p>
+            <input type="text" id="tags-input" placeholder="Enter tags...">
+            <button class="confirm-btn" onclick="submitStory()">Submit</button>
+            <button class="cancel-btn" onclick="hideDescriptionPopup()">Cancel</button>
+        </div>
     </div>
 
     </body>
