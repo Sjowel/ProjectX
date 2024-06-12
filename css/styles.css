@@ -225,7 +225,7 @@ main h1 {
     resize: none;
 }
 
-.submit-btn {
+.save-btn {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -238,7 +238,7 @@ main h1 {
     color: black;
 }
 
-.submit-btn:hover {
+.save-btn:hover {
     background-color: #cbe6f8;
     border-color: #A0D8FF;
 }
@@ -419,4 +419,56 @@ li {
     border: 1px solid #A0D8FF;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.auth-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 15px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #A0D8FF;
+    background-color: #A0D8FF;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.submit-btn:hover {
+    background-color: #cbe6f8;
+    border-color: #A0D8FF;
 }
