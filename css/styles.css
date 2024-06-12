@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     text-align: left;
     margin-bottom: 10px;
@@ -54,6 +54,11 @@ header {
 
 nav {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
 }
 
 .nav-links {
@@ -61,7 +66,6 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: left;
     gap: 70px;
 }
 
@@ -91,6 +95,7 @@ main h1 {
     font-size: 40px;
     margin-top: 40px;
     margin-bottom: 70px;
+    margin-left: 20px;
 }
 
 .box-container {
@@ -103,7 +108,82 @@ main h1 {
 .box {
     width: 200px;
     height: 200px;
-    border: 2px solid #6bbcf7;
+    border: 2px solid #A0D8FF;
     border-radius: 15px;
     margin-bottom: 100px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #6bbcf7;
+    border-radius: 15px;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #6bbcf7;
+}
+
+.btn-create {
+    padding: 8px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #6bbcf7;
+    background-color: #6bbcf7;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: -10pxs;
+}
+
+.btn-create:hover {
+    background-color: #cbe6f8;
+    border-color: #6bbcf7;
+}
+
+.box1 {
+    width: 450px;
+    height: 200px;
+    border: 2px solid #A0D8FF;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.box-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+main h2 {
+    font-size: 30px;
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+}
+
+.create-btn {
+    padding: 8px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #A0D8FF;
+    background-color: #A0D8FF;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-left: 150px;
+}
+
+.create-btn:hover {
+    background-color: #cbe6f8;
+    border-color: #A0D8FF;
 }
