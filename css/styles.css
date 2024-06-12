@@ -22,6 +22,11 @@ header {
     margin-bottom: 10px;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .auth-buttons {
     display: flex;
     gap: 40px;
@@ -283,7 +288,7 @@ main h1 {
 }
 
 .work-btn {
-    padding: 10px 70px;
+    padding: 10px 100px;
     font-size: 15px;
     cursor: pointer;
     border: 1px solid #A0D8FF;
@@ -342,15 +347,17 @@ li {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid   ;
     width: 80%;
     max-width: 400px;
     text-align: center;
     border-radius: 20px;
+    border-color: #A0D8FF;
 }
 
 .confirm-btn,
-.cancel-btn {
+.cancel-btn,
+.edit-btn {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -373,13 +380,24 @@ li {
 }
 
 .cancel-btn {
-    background-color: #A0D8FF;
+    background-color: #fff;
     border: 1px solid #A0D8FF;
 }
 
 .cancel-btn:hover {
     background-color: #cbe6f8;
     border-color: #A0D8FF;
+}
+
+.edit-btn {
+    background-color: #6bbcf7;
+    border: 1px solid #6bbcf7;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #A0D8FF;
+    border-color: #6bbcf7;
 }
 
 #description-input {

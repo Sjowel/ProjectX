@@ -10,7 +10,8 @@
 <body>
     <header>
         <div class="top-bar">
-            <div class="logo">MyWritings</div>
+            <div class="logo">
+                <a href=index.html class="logo-link">MyWritings</a></div>
             <div class="auth-buttons">
                 <button class="btn">Sign Up</button>
                 <button class="btn">Sign In</button>
@@ -47,6 +48,15 @@
                 <p>Are you sure you want to delete your work?</p>
                 <button class="confirm-btn" onclick="confirmDelete()">Yes</button>
                 <button class="cancel-btn" onclick="cancelDelete()">No</button>
+            </div>
+        </div>
+        <div id="story-details" class="modal">
+            <div class="modal-content">
+                <h2 id="modal-title"></h2>
+                <p><strong>Description:<br></strong> <span id="modal-description"></span></p>
+                <p><strong>Tags:<br></strong> <span id="modal-tags"></span></p>
+                <button id="edit-story" class="edit-btn" onclick="editStory()">Edit</button>
+                <button class="cancel-btn" onclick="closeModal()">Close</button>
             </div>
         </div>
     </main>

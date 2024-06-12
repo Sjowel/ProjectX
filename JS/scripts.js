@@ -18,7 +18,7 @@ function loadWorks() {
         button.textContent = work.title;
         button.className = 'work-btn';
         button.onclick = function() {
-            redirectToEditPage(index);
+            showStoryDetails(index);
         };
 
         const deleteButton = document.createElement('button');
@@ -119,14 +119,42 @@ function redirectToEditPage(index) {
     window.location.href = `create.html?index=${index}`;
 }
 
-// Load works when the mywork.html page loads
+// Function to show story details in a modal
+function showStoryDetails(index) {
+    const works = JSON.parse(localStorage.getItem('works')) || [];
+    const story = works[index];
+    if (story) {
+        document.getElementById('modal-title').textContent = story.title;
+        document.getElementById('modal-description').textContent = story.description;
+        document.getElementById('modal-tags').textContent = story.tags.join(', ');
+        const modal = document.getElementById('story-details');
+        modal.style.display = 'block';
+        
+        // Store the index of the story to be edited
+        document.getElementById('edit-story').setAttribute('data-index', index);
+    }
+}
+
+// Function to close the story details modal
+function closeModal() {
+    const modal = document.getElementById('story-details');
+    modal.style.display = 'none';
+}
+
+// Function to handle editing a story
+function editStory() {
+    const index = document.getElementById('edit-story').getAttribute('data-index');
+    redirectToEditPage(index);
+}
+
+// Function to load works when the mywork.html page loads
 if (window.location.pathname.endsWith('mywork.html')) {
     window.onload = function() {
         loadWorks();
     };
 }
 
-// Load the saved title and update the title dynamically when the create.html page loads
+// Function to load the saved title and update the title dynamically when the create.html page loads
 if (window.location.pathname.endsWith('create.html')) {
     window.onload = function() {
         const savedTitle = localStorage.getItem('storyTitle');
