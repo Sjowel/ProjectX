@@ -21,7 +21,7 @@
                 <li><a href="index.html">Browse</a></li>
                 <li><a href="mywork.html">My Work</a></li>
                 </ul>
-                <a href="#create" class="btn-create">Create</a>
+                <button class="btn-create" onclick="redirectToCreatePage()">Create</button>
                 <div class="nav-links search-container">
                     <input type="text" placeholder="Search...">
                 </div>
@@ -126,5 +126,10 @@
         <a href="page1.html" class="box"></a>
     </div>
     </main>
+    <script>
+        function redirectToCreatePage() {
+            window.location.href = 'create.html';
+        }
+    </script>
 </body>
 </html>

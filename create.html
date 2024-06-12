@@ -29,20 +29,19 @@
         </nav>
         <div class="separator"></div>
     </header>
-
-    <main>
-        <div class="box-container1">
-            <div class="box1">
-                <h2>Create your story</h2>
-                <button class="create-btn" onclick="redirectToCreatePage()">Create</button>
-            </div> 
-            </div>
-        </div>
-    </main>
+    <div class="story-container">
+        <h1 id="story-title">Write Your Story</h1>
+        <input type="text" id="title-input" placeholder="Enter story title" oninput="updateTitle()">
+        <textarea class="story-input" placeholder="Start writing your story here..."></textarea>
+        <button class="submit-btn">Submit</button>
+    </div>
     <script>
-        function redirectToCreatePage() {
-            window.location.href = 'create.html';
+        function updateTitle() {
+            const titleInput = document.getElementById('title-input');
+            const storyTitle = document.getElementById('story-title');
+            storyTitle.textContent = titleInput.value || 'Write Your Story';
         }
     </script>
-</body>
-</html>
+    </body>
+
+    </html>
