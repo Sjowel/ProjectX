@@ -282,9 +282,21 @@ main h1 {
     margin-bottom: 20px;
 }
 
-#work-list {
+#work-list, #poetry-list {
     list-style: none;
     padding: 0;
+}
+
+.box1 {
+    width: 100%;
+    max-width: 450px;
+    height: 200px;
+    border: 2px solid #A0D8FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-btn {
