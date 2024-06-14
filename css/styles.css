@@ -287,6 +287,10 @@ main h1 {
     padding: 0;
 }
 
+#work-list li, #poetry-list li {
+    white-space: nowrap;
+}
+
 .box1 {
     width: 100%;
     max-width: 450px;
