@@ -89,7 +89,8 @@ function submitStory() {
     const title = document.getElementById('title-input').value;
     const content = document.getElementById('story-content').value;
     const description = document.getElementById('description-input').value;
-    const tags = document.getElementById('tags-input').value.split(',').map(tag => tag.trim());
+    const tagsSelect = document.getElementById('tags-select');
+    const tags = Array.from(tagsSelect.selectedOptions).map(option => option.value);
     const works = JSON.parse(localStorage.getItem('works')) || [];
     const storyIndex = new URLSearchParams(window.location.search).get('index');
 

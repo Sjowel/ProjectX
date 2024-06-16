@@ -44,12 +44,26 @@
         <div class="modal-content">
             <p>Enter a short description of your story:</p>
             <textarea id="description-input" placeholder="Enter story description..."></textarea>
-            <p>Add tags (comma separated):</p>
-            <input type="text" id="tags-input" placeholder="Enter tags...">
+            <p>Add tags:</p>
+            <select id="tags-select" multiple>
+                <option value="actionandadventure">Action and Adventure</option>
+                <option value="classics">Classics</option>
+                <option value="comic">Comic</option>
+                <option value="detectiveandmystery">Detective and Mystery</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="shortstories">Short Stories</option>
+                <option value="thrillers">Thrillers</option>
+                <option value="others">Others</option>
+                <option value="poetry">Poetry</option>
+            </select>
             <button class="confirm-btn" onclick="submitStory()">Submit</button>
             <button class="cancel-btn" onclick="hideDescriptionPopup()">Cancel</button>
         </div>
     </div>
+    
 
     </body>
 

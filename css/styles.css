@@ -437,6 +437,16 @@ li {
     margin-bottom: 10px;
 }
 
+#tags-select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #A0D8FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
 .auth-container {
     padding: 20px;
     max-width: 400px;
