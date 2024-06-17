@@ -8,6 +8,11 @@ header {
     padding: 10px 20px;
 }
 
+.create-page {
+    background-color: #A0D8FF;
+
+}
+
 .top-bar {
     display: flex;
     justify-content: space-between;
