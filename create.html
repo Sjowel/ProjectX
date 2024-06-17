@@ -23,6 +23,7 @@
                 <li><a href="index.html">Browse</a></li>
                 <li><a href="mywork.html">My Work</a></li>
                 </ul>
+                <h1 id="story-title">Write Your Story</h1>
                 <div class="nav-links search-container">
                     <input type="text" placeholder="Search...">
                 </div>
@@ -31,10 +32,8 @@
         <div class="separator"></div>
     </header>
     <div class="story-container">
-        <h1 id="story-title">Write Your Story</h1>
         <div class="title-container">
             <input type="text" id="title-input" placeholder="Enter story title" oninput="updateTitle()">
-            <button class="save-title-btn" onclick="saveTitle()">Save Title</button>
         </div>
         <textarea class="story-input" id="story-content" placeholder="Start writing your story here..."></textarea>
         <button class="save-btn" onclick="showDescriptionPopup()">Save</button>
